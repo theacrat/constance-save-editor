@@ -13,7 +13,7 @@ import type { ComponentProps, ReactNode } from "react";
 type SpectrumRouter = NonNullable<ComponentProps<typeof Provider>["router"]>;
 
 const bodyClassName = style({
-	backgroundImage: "url(./images/background.jpg)",
+	backgroundImage: "url(/images/background.jpg)",
 	backgroundPosition: "center",
 	backgroundRepeat: "no-repeat",
 	backgroundSize: "cover",

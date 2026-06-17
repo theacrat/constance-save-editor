@@ -1,0 +1,44 @@
+{
+	"$schema": "https://www.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"skipLibCheck": true,
+
+		"noEmit": true,
+
+		"erasableSyntaxOnly": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+		"verbatimModuleSyntax": true,
+
+		"jsx": "react-jsx",
+		"lib": ["ESNext", "DOM", "DOM.Iterable"],
+		"moduleDetection": "force",
+		"target": "esnext",
+		"useDefineForClassFields": true,
+
+		"allowImportingTsExtensions": true,
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"noUncheckedSideEffectImports": true,
+
+		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"exactOptionalPropertyTypes": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"strict": true,
+		"paths": {
+			"@/*": ["./src/*"]
+		},
+		"types": ["bun", "vite/client"]
+	},
+	"include": ["./src/**/*", "./*.ts"]
+}
